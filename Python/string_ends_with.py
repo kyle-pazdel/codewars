@@ -1,15 +1,20 @@
 # Complete the solution so that it returns true if the first argument(string) passed in ends with the 2nd argument (also a string).
 
-def solution(str, ending):
+def solution(text, ending):
+    ending = [*ending]
+    text = [*text]
     i = -1
-    while i >= len(ending):
-        if ending[i] != str[i]:
-            print("False")
-        else:
-            print("True")
+    res = True
+    while i >= -len(ending):
+        if len(ending) > len(text):
+            return False
+        if ending[i] != text[i]:
+            res = False
+        i -= 1
+    return res
 
 
-solution("abcde", "cde")
-solution("abcde", "abc")
-solution("abcde", "")
+# solution("abcde", "cde")
+# solution("abcde", "abc")
+# solution("abcde", "")
 solution(":-)", ":-(")
