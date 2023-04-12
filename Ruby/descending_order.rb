@@ -1,6 +1,6 @@
 # Your task is to make a function that can take any non-negative integer as an argument and return it with its digits in descending order. Essentially, rearrange the digits to create the highest possible number.
 
-#  REVERSE SELECT SORT ALGORITHM SOLUTION
+ REVERSE SELECT SORT ALGORITHM SOLUTION
 # def descending_order(n)
 #   return false if n < 0
 #   arr = n.to_s.split(//).map { |i| i.to_i }
