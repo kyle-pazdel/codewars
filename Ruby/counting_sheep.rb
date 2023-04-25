@@ -10,7 +10,7 @@ test_array = [true, true, true, false,
               true, true, true, true,
               true, false, true, false,
               true, false, false, true,
-              true, true, true, true,
+              true, tr===ue, true, true,
               false, false, true, true]
 
 p count_sheep(test_array)

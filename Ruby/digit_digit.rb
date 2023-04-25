@@ -7,3 +7,4 @@ def square_digits(num)
 end
 
 p square_digits(9119)
+===
