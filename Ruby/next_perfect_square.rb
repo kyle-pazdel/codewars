@@ -2,7 +2,7 @@
 
 def find_next_square(sq)
   num = Math.sqrt(sq)
-  num % 1 == ? (num + 1)**2 : -1
+  num % 1 == 0 ? (num + 1) ** 2 : -1
 end
 
 find_next_square(121)
