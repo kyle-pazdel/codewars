@@ -1,37 +1,35 @@
-# # SOLUTION ONE
-# def switch_it_up(number):
-#     res = ""
-#     # print(number)
-#     match number:
-#         case 1:
-#             res = "One"
-#         case 2:
-#             res = "Two"
-#         case 3:
-#             res = "Three"
-#         case 4:
-#             res = "Four"
-#         case 5:
-#             res = "Five"
-#         case 6:
-#             res = "Six"
-#         case 7:
-#             res = "Seven"
-#         case 8:
-#             res = "Eight"
-#         case 9:
-#             res = "Nine"
-#         case 0:
-#             res = "Zero"
-#         case _:
-#             switch_it_up(number % 10)
-#     return res
+# SOLUTION ONE
+def switch_it_up(number):
+    match number:
+        case 1:
+            return "One"
+        case 2:
+            return "Two"
+        case 3:
+            return "Three"
+        case 4:
+            return "Four"
+        case 5:
+            return "Five"
+        case 6:
+            return "Six"
+        case 7:
+            return "Seven"
+        case 8:
+            return "Eight"
+        case 9:
+            return "Nine"
+        case 0:
+            return "Zero"
+        case _:
+            return switch_it_up(number % 10)
+    return res
 
-# SOLUTION TWO
-def switch_it_up(n):
-    if n > 9:
-        n = n % 10
-    return ['Zero', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine'][n]
+# # SOLUTION TWO
+# def switch_it_up(n):
+#     if n > 9:
+#         n = n % 10
+#     return ['Zero', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine'][n]
 
 
 print(switch_it_up(1))
