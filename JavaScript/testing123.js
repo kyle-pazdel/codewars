@@ -1,7 +1,4 @@
 const number = (arr) => {
-  if (arr.length === 0) {
-    return [];
-  }
   return arr.map((c, i) => `${i + 1}: ${c}`);
 };
 
