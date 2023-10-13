@@ -15,6 +15,7 @@ const isPangram = (str) => {
   for (let i = 0; i < alpha.length; i++) {
     if (key[alpha[i]] < 1) {
       return false;
+      gra;
     }
   }
   console.log(key);
@@ -22,12 +23,12 @@ const isPangram = (str) => {
 };
 
 // SOLUTION TWO
-const isPangram = (string) => {
+const isPangram2 = (string) => {
   string = string.toLowerCase();
   return "abcdefghijklmnopqrstuvwxyz".split("").every((x) => {
     return string.indexOf(x) !== -1;
   });
 };
 
-console.log(isPangram("The quick brown fox jumps over the lazy dog"));
-console.log(isPangram("The quick brown fox jumps over the lay dog"));
+console.log(isPangram2("The quick brown fox jumps over the lazy dog"));
+console.log(isPangram2("The quick brown fox jumps over the lay dog"));
