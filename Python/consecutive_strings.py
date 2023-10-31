@@ -1,9 +1,9 @@
 def longest_consec(strarr, k):
     longest = ""
     i = 0
-    while i < len(strarr) - k:
+    while i <= len(strarr) - k:
         consec = ""
-        for j in range(0, 3):
+        for j in range(0, k):
             consec += strarr[i + j]
         if len(consec) >= len(longest):
             longest = consec
@@ -11,10 +11,10 @@ def longest_consec(strarr, k):
     return longest
 
 
-# print(longest_consec(["zone", "abigail", "theta", "form", "libe", "zas"], 2))
-# # => "abigailtheta"
+print(longest_consec(["zone", "abigail", "theta", "form", "libe", "zas"], 2))
+# => "abigailtheta"
 print(longest_consec(["ejjjjmmtthh", "zxxuueeg", "aanlljrrrxx",
       "dqqqaaabbb", "oocccffuucccjjjkkkjyyyeehh"], 1))
 # => "oocccffuucccjjjkkkjyyyeehh"
-# print(longest_consec([], 3))
-# # => ""
+print(longest_consec([], 3))
+# => ""
